@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cbwncf14akrsb"]
+
+[ext_resource type="Script" uid="uid://bpcsswg3mamyu" path="res://Main/wiimotesetup.gd" id="1_68yu4"]
+
+[node name="WiimoteTestScene" type="Node3D" unique_id=909450302]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=259272606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014156818, 1.4853745, 1.5680444)
+light_energy = 3.251
+
+[node name="Container" type="Node3D" parent="." unique_id=1238977989]
+transform = Transform3D(1.9106855e-15, 4.3711385e-08, 0.99999994, 1, -4.3711385e-08, 0, 4.371139e-08, 0.99999994, -4.3711385e-08, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Container" unique_id=1313400732 node_paths=PackedStringArray("Display", "OtherDisplay", "RotationGuy")]
+size = Vector3(1.5, 1, 1)
+script = ExtResource("1_68yu4")
+Display = NodePath("../../TextEdit")
+OtherDisplay = NodePath("../../TextEdit2")
+RotationGuy = NodePath("..")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=175720633]
+transform = Transform3D(1, 0, 0, 0, 0.9935747, 0.113178484, 0, -0.113178484, 0.9935747, 0, 0.37903285, 2.9364946)
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=2036253178]
+offset_right = 472.0
+offset_bottom = 210.0
+theme_override_font_sizes/font_size = 32
+placeholder_text = "bhbhasd
+ashfjhdas
+asfhisdah
+asdasidjuidasd
+asdhsadigyhsadiuasisdhnasd"
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=1358206251]
+offset_left = 803.0
+offset_right = 1275.0
+offset_bottom = 210.0
+theme_override_font_sizes/font_size = 32
+placeholder_text = "bhbhasd
+ashfjhdas
+asfhisdah
+asdasidjuidasd
+asdhsadigyhsadiuasisdhnasd"
